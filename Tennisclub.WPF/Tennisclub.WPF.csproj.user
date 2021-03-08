@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="DefaultPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GameResults\GameResultsOfGamePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GameResults\GameResultsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Games\GamesOfMemberPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Games\GamesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MemberFines\FinesOfMemberPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MemberFines\FinesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MemberRoles\MemberWithRolesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MemberRoles\RolesOfMemberPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Members\MemberAddPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Members\MemberPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Members\MemberUpdatePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Roles\RolePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="DefaultPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GameResults\GameResultsOfGamePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GameResults\GameResultsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Games\GamesOfMemberPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Games\GamesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MemberFines\FinesOfMemberPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MemberFines\FinesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MemberRoles\MemberWithRolesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MemberRoles\RolesOfMemberPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Members\MemberAddPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Members\MemberPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Members\MemberUpdatePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Roles\RolePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

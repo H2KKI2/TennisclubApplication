@@ -1,0 +1,12 @@
+D:\School\Programmeren .Net\TennisclubApplication\Tennisclub_Data\bin\Debug\netcoreapp3.1\Tennisclub_Data.deps.json
+D:\School\Programmeren .Net\TennisclubApplication\Tennisclub_Data\bin\Debug\netcoreapp3.1\Tennisclub_Data.dll
+D:\School\Programmeren .Net\TennisclubApplication\Tennisclub_Data\obj\Debug\netcoreapp3.1\Tennisclub_Data.csprojAssemblyReference.cache
+D:\School\Programmeren .Net\TennisclubApplication\Tennisclub_Data\obj\Debug\netcoreapp3.1\Tennisclub_Data.AssemblyInfoInputs.cache
+D:\School\Programmeren .Net\TennisclubApplication\Tennisclub_Data\obj\Debug\netcoreapp3.1\Tennisclub_Data.AssemblyInfo.cs
+D:\School\Programmeren .Net\TennisclubApplication\Tennisclub_Data\bin\Debug\netcoreapp3.1\Tennisclub_Data.pdb
+D:\School\Programmeren .Net\TennisclubApplication\Tennisclub_Data\obj\Debug\netcoreapp3.1\Tennisclub_Data.dll
+D:\School\Programmeren .Net\TennisclubApplication\Tennisclub_Data\obj\Debug\netcoreapp3.1\Tennisclub_Data.pdb
+D:\School\Programmeren .Net\TennisclubApplication\Tennisclub_Data\bin\Debug\netcoreapp3.1\Tennisclub_Data.runtimeconfig.json
+D:\School\Programmeren .Net\TennisclubApplication\Tennisclub_Data\bin\Debug\netcoreapp3.1\Tennisclub_Data.runtimeconfig.dev.json
+D:\School\Programmeren .Net\TennisclubApplication\Tennisclub_Data\obj\Debug\netcoreapp3.1\Tennisclub_Data.genruntimeconfig.cache
+D:\School\Programmeren .Net\TennisclubApplication\Tennisclub_Data\obj\Debug\netcoreapp3.1\Tennisclub_Data.csproj.CoreCompileInputs.cache

@@ -1,0 +1,92 @@
+﻿<Page x:Class="Tennisclub.WPF.MemberFines.FinesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tennisclub.WPF.MemberFines"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="FinesPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" FontSize="30" Foreground="#DADADA" Text="Fines"></TextBlock>
+
+        <Grid Grid.Column="1" Grid.Row="2" Width="auto">
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,10" Background="#1D1D1D" HorizontalAlignment="Left">
+                <Grid VerticalAlignment="Bottom" Margin="20 5 0 10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Handout Date" Foreground="#DADADA"></TextBlock>
+                    <DatePicker x:Name="dp_HandoutDateFilter" Grid.Row="1" Width="150" Height="30" Background="#DADADA" HorizontalAlignment="Left"></DatePicker>
+                </Grid>
+                <Grid VerticalAlignment="Bottom" Margin="20 5 0 10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Payment Date" Foreground="#DADADA"></TextBlock>
+                    <DatePicker x:Name="dp_PaymentDateFilter" Grid.Row="1" Width="150" Height="30" Background="#DADADA" HorizontalAlignment="Left"></DatePicker>
+                </Grid>
+                
+                <Button x:Name="btn_Filter" Background="Transparent" BorderThickness="0" Margin="10 10 0 0" Click="btn_Filter_Click">Filter</Button>
+                <Button x:Name="btn_ClearFilter" Background="Transparent" BorderThickness="0" Margin="0 10 0 0" Click="btn_ClearFilter_Click">Clear Filter</Button>
+            </StackPanel>
+        </Grid>
+
+
+        <DataGrid x:Name="finesDataGrid" Grid.Row="3" Grid.Column="1" IsReadOnly="True" ColumnWidth="*" HeadersVisibility="Column" FontSize="10"
+                   AutoGenerateColumns="False" CanUserAddRows="False" SelectionMode="Single" GridLinesVisibility="None" SelectionChanged="FinesDataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Member.Id}" Width="0.50*"/>
+                <DataGridTextColumn Header="FineNr" Binding="{Binding FineNumber}" Width="0.6*"/>
+                <DataGridTextColumn Header="Amount" Binding="{Binding Amount}" Width="*"/>
+                <DataGridTextColumn Header="First Name" Binding="{Binding Member.FirstName}" Width="*"/>
+                <DataGridTextColumn Header="Last Name" Binding="{Binding Member.LastName}" Width="*"/>
+                <DataGridTextColumn Header="Handout Date" Binding="{Binding HandoutDate, StringFormat=\{0:dd/MM/yy\}}" Width="*"/>
+                <DataGridTextColumn Header="Payment Date" Binding="{Binding PaymentDate, StringFormat=\{0:dd/MM/yy\}}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Grid Grid.Row="3" Grid.Column="2">
+            <Grid Grid.Row="2" Grid.Column="2" Background="#1D1D1D" Margin="10 0 0 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="0.33*"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="1" Grid.Column="1" FontSize="20" Foreground="#DADADA" Text="Complete Payment" HorizontalAlignment="Center"></TextBlock>
+                <Grid Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Payment Date" Foreground="#DADADA"></TextBlock>
+                    <DatePicker x:Name="dp_PaymentDate" Grid.Row="1" Width="150" Height="30" Background="#DADADA" HorizontalAlignment="Left"></DatePicker>
+                </Grid>
+                <Button x:Name="btn_CompletePayment" Grid.Column="1" Grid.Row="3" VerticalAlignment="center" Background="#1D1D1D" FontSize="15" BorderThickness="0" Width="175" Height="40" Click="btn_CompletePayment_Click">Complete Payment</Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

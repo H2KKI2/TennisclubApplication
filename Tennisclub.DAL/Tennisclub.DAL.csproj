@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20201015100545_Initial.cs" />
+    <Compile Remove="Migrations\20201015100545_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20201226114139_UpdateRoleConfig.cs" />
+    <Compile Remove="Migrations\20201226114139_UpdateRoleConfig.Designer.cs" />
+    <Compile Remove="Migrations\20201226115018_UpdateRoleConfig2.cs" />
+    <Compile Remove="Migrations\20201226115018_UpdateRoleConfig2.Designer.cs" />
+    <Compile Remove="Migrations\20201226121937_RoleTest2.cs" />
+    <Compile Remove="Migrations\20201226121937_RoleTest2.Designer.cs" />
+    <Compile Remove="Migrations\20201226122608_Init.cs" />
+    <Compile Remove="Migrations\20201226122608_Init.Designer.cs" />
+    <Compile Remove="Migrations\20201226123030_AddDefaultRoles.cs" />
+    <Compile Remove="Migrations\20201226123030_AddDefaultRoles.Designer.cs" />
+    <Compile Remove="Migrations\20201227195000_AddSoftDelete.cs" />
+    <Compile Remove="Migrations\20201227195000_AddSoftDelete.Designer.cs" />
+    <Compile Remove="Migrations\20201228181803_UpdateBirthDate.cs" />
+    <Compile Remove="Migrations\20201228181803_UpdateBirthDate.Designer.cs" />
+    <Compile Remove="Migrations\20201228193027_UpdateIsDeleted.cs" />
+    <Compile Remove="Migrations\20201228193027_UpdateIsDeleted.Designer.cs" />
+    <Compile Remove="Migrations\20201230111255_UpdateMemberRoleMemberId.cs" />
+    <Compile Remove="Migrations\20201230111255_UpdateMemberRoleMemberId.Designer.cs" />
+    <Compile Remove="Migrations\20201230111626_UpdateMemberRoleIndex.cs" />
+    <Compile Remove="Migrations\20201230111626_UpdateMemberRoleIndex.Designer.cs" />
+    <Compile Remove="Migrations\20201230112307_UpdateMemberRoles_RemoveRoleMap.cs" />
+    <Compile Remove="Migrations\20201230112307_UpdateMemberRoles_RemoveRoleMap.Designer.cs" />
+    <Compile Remove="Migrations\20210101121205_UpdateLeagues.cs" />
+    <Compile Remove="Migrations\20210101121205_UpdateLeagues.Designer.cs" />
+    <Compile Remove="Migrations\20210102223453_FixGameResults.cs" />
+    <Compile Remove="Migrations\20210102223453_FixGameResults.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tennisclub.Common\Tennisclub.Common.csproj" />
+  </ItemGroup>
+
+</Project>
